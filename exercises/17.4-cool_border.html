@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #131313;
+    }
+    .container {
+      position: relative;
+      padding: 50px 60px;
+    }
+    h1 {
+      color: #fff;
+    }
+
+    .top::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 40px;
+      height: 40px;
+      border-top: 3px solid red;
+      border-right: 3px solid red;
+    }
+
+    .top::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      border-top: 3px solid red;
+      border-left: 3px solid red;
+    }
+
+    .bottom::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      border-bottom: 3px solid red;
+      border-left: 3px solid red;
+    }
+
+    .bottom::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 40px;
+      height: 40px;
+      border-bottom: 3px solid red;
+      border-right: 3px solid red;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="top"></div>
+      <h1>CooL BordeR!</h1>
+      <div class="bottom"></div>
+    </div>
+  </body>
+</html>
