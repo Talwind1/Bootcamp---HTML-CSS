@@ -6,31 +6,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+<style>
+
+form {
+        width: 400px;
+        box-shadow: 5px 5px blur black;
+      }
+      
+
+  .form-group {
+        margin: 10px;
+      }
+</style>
 <body>
   <h1>Create an Account</h1>
   <p>
     <form>
-      <div>
+      <div class="form-group">
       <label for="Email">Email</label>
       <input type="text", name="Email">
     </div>
-    <div>
+    
+    <div class="form-group">
       <label for="Password">Password</label>
       <input type="text", name="Password">
     </div>
-    <div>
+    
+    <div class="form-group">
+    </br>
       <label for="Age">Age</label>
-      <input type="select" name="Age" id="Age">
+      <select name="age" id="age"> Select Age
+      <option value="14-18">14-18</option>
+      <option value="19-26">19-26</option>
+      <option value="27-35">27-35</option>
     </div>
-    <div>
-      <label for="text">Tell us a little about yourself</label>
-      <input type="text" name="Tell us" id="Tell us" width="1000px">****
+    
+    <div class="form-group">
+      <label forinput ="describe">Tell us a little about yourself</label>
+      <textarea name="describe" id="describe" rows="10" cols="30"></textarea>
     </div>
-    <label for="I agree">I agree to the</label>
-    <a href="#">Therms of service</a>
-    <input type: "checkbox" />
-  <input type="submit" value:"Sign Up">
-    </form>
+    
+    <div  class="form-group">
+    <input type= "checkbox" />
+    <label for="I agree">I agree to the
+    <a href="#">therms of service</a></label></div>
+    <div class="form-group">
+  <input type="submit" value="Sign Up">
+  </div></form>
   </p>
 </body>
 </html>

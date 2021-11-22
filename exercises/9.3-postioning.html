@@ -7,16 +7,45 @@
     <title>Document</title>
   </head>
   <style>
+    #container {
+      position: relative;
+    }
     .box {
-      padding: 50px;
-      margin: auto;
-      border: solid, 3px, #444;
+      border: 3px solid #444;
+      background: #fff;
+      position: absolute;
+    }
+
+    #one {
+      width: 120px;
+      height: 100px;
+    }
+
+    #two {
+      width: 90px;
+      height: 80px;
+      top: 100px;
+      left: 100px;
+    }
+
+    #three {
+      width: 300px;
+      height: 60px;
+      top: 180px;
+    }
+
+    #four {
+      width: 60px;
+      height: 300px;
+      left: 200px;
     }
   </style>
   <body>
-    <div id="one" class="box"></div>
-    <div id="two" class="box"></div>
-    <div id="three" class="box"></div>
-    <div id="four" class="box"></div>
+    <div id="container">
+      <div id="one" class="box">1</div>
+      <div id="two" class="box">2</div>
+      <div id="three" class="box">3</div>
+      <div id="four" class="box">4</div>
+    </div>
   </body>
 </html>
