@@ -6,5 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <style>
+    .container {
+      border: 1px solid rgb(29, 27, 27);
+      position: relative;
+    }
+    .box {
+      border: 1px solid rgb(29, 27, 27);
+    }
+    .header {
+      position: absolute;
+      background-color: rgb(218, 142, 3);
+      height: 10vh;
+      top: 0;
+      width: 100vw;
+      height: 10vh;
+    }
+    .main {
+      background: rgb(134, 0, 139);
+      position: absolute;
+      width: 60vw;
+      height: 60vh;
+      right: 0;
+      top: 10vh;
+    }
+
+    .footer {
+      position: absolute;
+      background: rgb(26, 26, 201);
+      height: 10vh;
+      width: 100vw;
+      top: 70vh;
+    }
+    .side {
+      position: absolute;
+      background: darkgreen;
+      width: 40vw;
+      height: 60vh;
+      top: 10vh;
+      left: 70px;
+    }
+
+    @media screen and (max-width: 715px) {
+      .side {
+        display: none;
+      }
+    }
+  </style>
+  <body>
+    <div id="container">
+      <div class="box header">Header</div>
+      <div class="box main">Main</div>
+      <div class="box side">Side</div>
+      <div class="box footer">Footer</div>
+    </div>
+  </body>
 </html>
